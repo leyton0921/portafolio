@@ -1,25 +1,86 @@
 @import "../../styles/variables.scss";
 
-.container{
+.container {
     position: fixed;
     padding: 1rem;
-    right: 0; 
+    right: 0;
 
-
-    .ContainerIcons{ 
+    .ContainerIcons {
         display: flex;
         gap: 1rem;
         padding-right: 1rem;
 
-        .button{
+        .button {
             background: none;
             border: none;
             color: $color-primary;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
             }
         }
-    };
+    }
+}
 
+.dark-theme {
+    .ContainerIcons {
+        .button {
+            color: #ffff;
+        }
+    }
 
+    .modalOverlay {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .modalContent {
+        background: #121212;
+        color: $color-terceary;
+    }
+
+    .modalButton {
+        background-color: $color-terceary;
+        color: $color-secondary;
+    }
+
+    .modalButtonscudary {
+        background: none;
+        color: $color-terceary;
+        border: $color-terceary 2px solid;
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    padding: 1rem;
+    right: 0;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modalButton {
+    padding: 10px 20px;
+    background-color: $color-terceary;
+    color: $color-secondary;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modalButtonscudary {
+    padding: 10px 20px;
+    background: none;
+    color: $color-terceary;
+    border: $color-terceary 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
 }
