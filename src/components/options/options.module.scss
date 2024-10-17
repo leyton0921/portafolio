@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.container{
+    position: fixed;
+    padding: 1rem;
+    right: 0; 
+
+
+    .ContainerIcons{ 
+        display: flex;
+        gap: 1rem;
+        padding-right: 1rem;
+
+        .button{
+            background: none;
+            border: none;
+            color: $color-primary;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    };
+
+
+}
