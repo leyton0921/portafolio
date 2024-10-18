@@ -5,28 +5,10 @@ import ProjectText from '@/components/projectext/projecttext';
 export default function Projects() {
     const projects = [
         {
-            name: "Urgencias Ya",
-            imageUrl: "/images/avatar1.png",
-            liveUrl: "https://urgenciasya-frontend-3.onrender.com/",
-            githubUrl: "https://github.com/sebas1913/UrgenciasYa-Frontend"
-        },
-        {
-            name: "Urgencias Ya",
-            imageUrl: "/images/avatar1.png",
-            liveUrl: "https://urgenciasya-frontend-3.onrender.com/",
-            githubUrl: "https://github.com/sebas1913/UrgenciasYa-Frontend"
-        },
-        {
-            name: "Urgencias Ya",
-            imageUrl: "/images/avatar1.png",
-            liveUrl: "https://urgenciasya-frontend-3.onrender.com/",
-            githubUrl: "https://github.com/sebas1913/UrgenciasYa-Frontend"
-        },
-        {
-            name: "Urgencias Ya",
-            imageUrl: "/images/avatar1.png",
-            liveUrl: "https://urgenciasya-frontend-3.onrender.com/",
-            githubUrl: "https://github.com/sebas1913/UrgenciasYa-Frontend"
+            name: "Portafolio",
+            imageUrl: "/images/portafolio.png",
+            liveUrl: "https://portafolio-isabella-leyton.vercel.app/about",
+            githubUrl: "https://github.com/leyton0921/portafolio"
         }
 
     ];
