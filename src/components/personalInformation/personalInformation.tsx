@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import styles from "./personalInformation.module.scss";
 import Image from "next/image";
-import Button from "../UI/button/button";
 import { HiOutlineMail } from "react-icons/hi";
 import Link from "next/link";
 import { FiPhone } from "react-icons/fi";
@@ -28,7 +27,7 @@ const PersonalInformation: React.FC = () => {
                     </div>
                     <p>Construyo soluciones web receptivas que fusionan estética y funcionalidad para ofrecer una experiencia de usuario excepcional.</p>
                     <div className={styles.containerButton}>
-                        <Button className={styles.button}><HiOutlineMail /> Correo</Button>
+                        <a href="mailto:leytoncarmonsaisabella@gmail.com"className={styles.button}><HiOutlineMail /> Correo</a>
                         <Link className={styles.buttonSecundary} href="/contact"><FiPhone /> Contacto</Link>
                     </div>
                 </div>
