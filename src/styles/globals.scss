@@ -14,14 +14,14 @@ html {
     --color-primary: #000;
     --color-secondary: #fff;
     --color-terceary: #2b6eff;
-    --color-container:#9e9e9eac;
-    --background-color: var(--color-secondary);
+    --color-container:#ece9e9;
+    --background-color: var(--color-container);
     --text-color: var(--color-primary);
     --h2-color: var(--color-secondary);
 }
 
 .dark-theme {
-    --background-color: #121212;
+    --background-color: #333335;
     --text-color: var(--color-secondary);
    --container-color:var(--color-container);
 }
