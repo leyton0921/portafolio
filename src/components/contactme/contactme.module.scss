@@ -1,44 +1,64 @@
 @import "../../styles/variables.scss";
 
-.container{
+.container {
     width: 100%;
-    height: 100%;
     padding: 3rem;
     display: flex;
     flex-direction: column;
 
-    .tittle{
-        width: 100%;
+    .tittle {
         border-bottom: solid 1.7px #d3d0d0;
 
-        h3{
+        h3 {
             font-size: 35px;
+            text-align: center; // Centra el título
         }
     }
 
-    .containerInfo{
+    .containerInfo {
         width: 60%;
-        height: 400px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row; // Mantiene en fila en pantallas grandes
+        justify-content: center; // Centra los ítems horizontalmente
         margin: auto;
         padding: 3rem;
         gap: 3rem;
 
-
-
-        .item{
-            width: 50%;
+        .item {
             display: flex;
             gap: 1rem;
             color: $color-terceary;
             align-items: center;
-            margin: auto;
+            flex-direction: column; // Cambia a columna en responsive
+            text-align: center; // Centra el texto
+        }
+    }
+}
 
-            .text{
-                color: $color-primary;
-            }
+@media (max-width: 768px) {
+    .containerInfo {
+        width: 90%;
+        display: flex;
+        padding: 2rem;
+        flex-direction: column; // Cambia a columna en responsive
+
+        .item {
+            width: 100%;
+            align-items: center; // Centra verticalmente en responsive
         }
     }
 
+    .tittle h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tittle h3 {
+        font-size: 24px;
+    }
+
+    .item .icon {
+        font-size: 1.5rem;
+    }
 }

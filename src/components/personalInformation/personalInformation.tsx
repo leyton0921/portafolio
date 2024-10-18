@@ -7,8 +7,6 @@ import { HiOutlineMail } from "react-icons/hi";
 import Link from "next/link";
 import { FiPhone } from "react-icons/fi";
 
-
-
 const PersonalInformation: React.FC = () => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -26,15 +24,13 @@ const PersonalInformation: React.FC = () => {
                 <div className={styles.containerText}>
                     <div className={styles.name}>
                         <h1>Isabella <span className={styles.colorTerceary}>Leyton Carmona</span></h1>
-                    <h2>Front-End Developer</h2>
-
+                        <h2>Front-End Developer</h2>
                     </div>
                     <p>Construyo soluciones web receptivas que fusionan estética y funcionalidad para ofrecer una experiencia de usuario excepcional.</p>
                     <div className={styles.containerButton}>
-                <Button className={styles.button}><HiOutlineMail/>Correo</Button>
-                <Link className={styles.buttonSecundary} href="/contact"><FiPhone/>Contacto</Link>
-
-                </div>
+                        <Button className={styles.button}><HiOutlineMail /> Correo</Button>
+                        <Link className={styles.buttonSecundary} href="/contact"><FiPhone /> Contacto</Link>
+                    </div>
                 </div>
             </div>
             <div className={styles.containerPhoto}>
@@ -50,7 +46,6 @@ const PersonalInformation: React.FC = () => {
                         height={200}
                     />
                 </div>
-              
             </div>
         </div>
     );

@@ -25,8 +25,11 @@ const Options: React.FC = () => {
   };
 
   const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme);
-    document.body.classList.toggle('dark-theme', !isDarkTheme);
+    setIsDarkTheme(prev => {
+      const newTheme = !prev;
+      document.body.classList.toggle('dark-theme', newTheme);
+      return newTheme;
+    });
   };
 
   return (

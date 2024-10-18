@@ -1,8 +1,7 @@
 @import "../../styles/variables.scss";
 
-.container{
-
-    nav{
+.container {
+    nav {
         position: fixed;
         left: 0; 
         top: 50%;
@@ -11,15 +10,35 @@
         flex-direction: column;
         padding: 1rem;
         gap: 1rem;
-    };
-
-    .link{
-        text-decoration: none;
-        color: $color-primary;
     }
 
-    .active{
+    .link {
+        text-decoration: none;
+        color: $color-primary;
+
+        &:hover {
+            color: $color-terceary; 
+        }
+    }
+
+    .active {
         text-decoration: none;
         color: $color-terceary;
+    }
+}
+
+.dark-theme {
+    .container {
+        nav {
+            background-color: #c37a7a; 
+        }
+
+        .link {
+            color: #ffff; 
+        }
+
+        .active {
+            color: $color-terceary; 
+        }
     }
 }

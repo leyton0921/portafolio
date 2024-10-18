@@ -4,7 +4,6 @@ import { FiPhone } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaLocationDot } from "react-icons/fa6";
 
-
 const ContactSection: React.FC = () => {
     return (
         <div className={styles.container}>
@@ -14,37 +13,31 @@ const ContactSection: React.FC = () => {
 
             <div className={styles.containerInfo}>
                 <div className={styles.item}>
-                <FiPhone size={30}/>
+                    <FiPhone size={40} />
                     <div className={styles.text}>
-                    <h3>
-                        Teléfono
-                    </h3>
-                    <p>+57 3215232970</p>
+                        <h3>Teléfono</h3>
+                        <p>+57 3215232970</p>
                     </div>
                 </div>
 
                 <div className={styles.item}>
-                <HiOutlineMail size={30}/>
+                    <HiOutlineMail size={40} />
                     <div className={styles.text}>
-                    <h3>
-                        Correo
-                    </h3>
-                    <p>leytoncarmonaisabella@gmail.com</p>
+                        <h3>Correo</h3>
+                        <p>leytoncarmonaisabella@gmail.com</p>
                     </div>
                 </div>
 
                 <div className={styles.item}>
-                <FaLocationDot size={30}/>
+                    <FaLocationDot size={40} />
                     <div className={styles.text}>
-                    <h3>
-                        Ubicación
-                    </h3>
-                    <p>Colombia-Antioquia-Medellín</p>
+                        <h3>Ubicación</h3>
+                        <p>Colombia-Antioquia-Medellín</p>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default ContactSection
+export default ContactSection;
