@@ -12,6 +12,7 @@ html {
     --color-primary: #000;
     --color-secondary: #fff;
     --color-terceary: #2b6eff;
+    --color-container:#9e9e9eac;
     --background-color: var(--color-secondary);
     --text-color: var(--color-primary);
     --h2-color: var(--color-secondary);
@@ -20,7 +21,7 @@ html {
 .dark-theme {
     --background-color: #121212;
     --text-color: var(--color-secondary);
-    --h1-color: var(--color-secondary);
+   --container-color:var(--color-container);
 }
 
 body {
@@ -30,15 +31,24 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+
+    h1, h2, p {
+        color: var(--text-color); 
+    }
+    
+    .dark-theme h1, .dark-theme h2, .dark-theme p {
+        color: var(--text-color); 
+    }
+
+    nav{
+        .link{
+            color: var(--text-color);
+
+        }
+    }
 }
 
-h1, h2, p {
-    color: var(--text-color); /* Ajustado */
-}
 
-.dark-theme h1, .dark-theme h2, .dark-theme p {
-    color: var(--text-color); /* Para asegurar el cambio en el modo oscuro */
-}
 
 main {
     flex-grow: 1;

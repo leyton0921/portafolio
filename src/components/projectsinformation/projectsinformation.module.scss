@@ -43,7 +43,7 @@
       .name {
           font-size: 1.1rem;
           font-weight: bold;
-          color: #333;
+          color: var(--text-color);
       }
 
       .containerButton {
@@ -57,6 +57,7 @@
                   padding: 0.5rem;
                   border: none;
                   background: none;
+                  color: var(--text-color);
 
                   &:hover {
                       cursor: pointer;

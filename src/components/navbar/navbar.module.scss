@@ -10,35 +10,22 @@
         flex-direction: column;
         padding: 1rem;
         gap: 1rem;
-    }
-
-    .link {
-        text-decoration: none;
-        color: $color-primary;
-
-        &:hover {
-            color: $color-terceary; 
-        }
-    }
-
-    .active {
-        text-decoration: none;
-        color: $color-terceary;
-    }
-}
-
-.dark-theme {
-    .container {
-        nav {
-            background-color: #c37a7a; 
-        }
 
         .link {
-            color: #ffff; 
+            text-decoration: none;
+            color: var(--text-color);
+            &:hover {
+                color: $color-terceary; 
+            }
         }
-
+    
         .active {
-            color: $color-terceary; 
+            text-decoration: none;
+            color: $color-terceary;
         }
     }
+
+
 }
+
+
